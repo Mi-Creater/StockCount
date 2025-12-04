@@ -799,25 +799,40 @@
 </script>
 </body>
 </html>
-<!-- Calculator Button -->
-<button onclick="toggleCalc()" style="
-    padding:10px 20px;
-    background:#007bff;
-    color:white;
-    border:none;
-    cursor:pointer;
-    border-radius:5px;
-">Open Calculator</button>
+<!-- Top Fixed Calculator Button -->
+<div style="
+    position:fixed;
+    top:0;
+    left:230;
+    width:189%;
+    background:#0000;
+    padding:0px;
+    z-index:9999;
+    text-align:center;
+">
+    <button onclick="toggleCalc()" style="
+        padding:5px 20px;
+        background:#ff9900;
+        color:white;
+        border:none;
+        cursor:pointer;
+        font-size:18px;
+        border-radius:5px;
+    ">Calculator</button>
+</div>
+
+<!-- Space so content does not hide behind header -->
+<div style="height:60px;"></div>
 
 <!-- Calculator Box -->
 <div id="calcBox" style="
     display:none;
-    width:250px;
+    width:260px;
     padding:15px;
     background:#f4f4f4;
     border:1px solid #ccc;
     border-radius:10px;
-    margin-top:10px;
+    margin:20px auto;
 ">
     <input type="text" id="result" style="
         width:100%;
